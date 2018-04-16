@@ -16,6 +16,9 @@ public class BotApplication {
         LOGGER.info("BotApplication Main started");
 
         InputParameters inputParameters = getInputParametersFromUserInput();
+
+        // TODO validate inputs or manage invalid input values
+
         GithubRepositoryManager githubRepositoryManager = new GithubRepositoryManager(inputParameters);
         new PullRequestsPollingProcessor(githubRepositoryManager).startPollingPullRequests();
 
