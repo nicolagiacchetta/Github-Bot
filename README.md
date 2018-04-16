@@ -1,6 +1,6 @@
 # GithubBot
 
-To build and start the Github Bot application run the start-bot.sh script.
+To build and start the Github Bot application run the *start-bot.sh* script.
 
 To run the app, you will need the following information: 
 * Username and password of a Github user for the authentication.
