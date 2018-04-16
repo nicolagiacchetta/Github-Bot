@@ -39,7 +39,4 @@ public class BotApplication {
 
         return new InputParameters(user, password, repositoryOwner, repositoryName);
     }
-
-
-
 }

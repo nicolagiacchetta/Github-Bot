@@ -112,7 +112,8 @@ public class GithubRepositoryManager {
     }
 
     /**
-     * This class has been created as a temporary fix to a bug found in the PullRequestService.replyToComment method.
+     * This class has been created as a quick and temporary fix to a bug found in the PullRequestService.replyToComment
+     * method.
      */
     public class PatchedPullRequestService extends PullRequestService {
 
