@@ -1,8 +1,10 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
 group 'it.nicolagiacchetta.github'
 version '1.0'
 
-apply plugin: 'java'
-
+mainClassName = 'it.nicolagiacchetta.github.BotApplication'
 sourceCompatibility = 1.8
 
 repositories {

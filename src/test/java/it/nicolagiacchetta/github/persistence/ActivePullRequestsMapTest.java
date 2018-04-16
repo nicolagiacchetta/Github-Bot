@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ActivePullRequestsMapTest {
 
-    private static final Integer NUMBER = new Integer(1);
+    private static final Integer NUMBER = new Integer(7);
 
     private static ActivePullRequests activePullRequests = ActivePullRequestsMap.getInstance();
 
