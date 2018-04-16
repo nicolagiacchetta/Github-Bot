@@ -27,10 +27,6 @@ public class BotApplication {
     }
 
     private static InputParameters getInputParametersFromUserInput() {
-//        Console console = System.console();
-//        String username = console.readLine("Username for 'https://github.com': ");
-//        char[] password = console.readPassword("Password for 'https://github.com': ");
-
         Scanner in = new Scanner(System.in);
         System.out.print("Username for 'https://github.com': ");
         String user = in.next();

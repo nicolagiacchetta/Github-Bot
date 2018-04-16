@@ -28,7 +28,7 @@ public class GithubRepositoryManager {
     private final IssueService issueService;
     private final RepositoryId repositoryId;
 
-    public GithubRepositoryManager (PatchedPullRequestService pullRequestService,
+    GithubRepositoryManager (PatchedPullRequestService pullRequestService,
                                     IssueService issueService,
                                     RepositoryId repositoryId) {
         this.pullRequestService = pullRequestService;

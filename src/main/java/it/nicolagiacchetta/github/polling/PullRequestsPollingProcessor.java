@@ -4,6 +4,7 @@ package it.nicolagiacchetta.github.polling;
 import it.nicolagiacchetta.github.persistence.ActivePullRequests;
 import it.nicolagiacchetta.github.persistence.ActivePullRequestsMap;
 import it.nicolagiacchetta.github.repository.GithubRepositoryManager;
+import org.eclipse.egit.github.core.PullRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -67,8 +68,8 @@ public class PullRequestsPollingProcessor {
             LOGGER.debug("Starting polling comments on pull requests of repository with name={}...", repositoryName);
             this.githubRepositoryManager.getOpenPullRequests()
                                         .stream()
-                                        .mapToInt(pr -> pr.getNumber())
-                                        .filter(number -> isNotActive(number))
+                                        .mapToInt(PullRequest::getNumber)
+                                        .filter(this::isNotActive)
                                         .forEach(number -> {
                                             commentsPoller.startPollingComments(number);
                                             this.activePullRequests.put(number);
