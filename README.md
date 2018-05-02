@@ -1,4 +1,4 @@
-# GithubBot
+# GitHub Bot
 
 To build and start the Github Bot application run the *start-bot.sh* script.
 
